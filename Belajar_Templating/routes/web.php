@@ -13,6 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return view('welcome');
+});
+
+Route::get('/master', function(){
+    return view('adminLTE.master');
+});
+
+Route::get('/', function(){
+    return view('data.tabel');
+});
+
+Route::get('/data-tables', function(){
+    return view('data.tabel-data');
 });
